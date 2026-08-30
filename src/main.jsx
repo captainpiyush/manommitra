@@ -24,9 +24,16 @@ import {
   Globe2,
   X,
   ArrowLeft,
+  Search,
+  Check,
+  Sparkles,
+  History,
+  Eye,
+  Clock,
+  Calendar,
 } from "lucide-react";
 
-import "./index.css";
+import "./style.css";
 
 /* =========================================================
    LANGUAGE DATA
@@ -38,7 +45,7 @@ const languages = {
     native: "English",
 
     brand: "SWARTHIKA",
-    subtitle: "PS093 • PUBLIC SERVICE PROTOTYPE",
+    subtitle: "PUBLIC SERVICE PROTOTYPE",
 
     description:
       "SWARTHIKA helps structure complaints and identify support needs using an explainable screening aid. You stay in control at every step.",
@@ -46,7 +53,7 @@ const languages = {
     startComplaint: "Start a complaint",
     chooseLanguage: "Choose language",
 
-    trackComplaint: "Track complaint",
+    trackComplaint: "Complaint History",
     support: "Support",
     emergencySOS: "Emergency SOS",
 
@@ -130,7 +137,7 @@ const languages = {
       "Your complaint has been recorded in the prototype system.",
 
     complaintId: "Complaint ID",
-    trackNow: "Track complaint",
+    trackNow: "View in Complaint History",
 
     sosTitle: "Emergency SOS",
     sosDescription:
@@ -139,11 +146,11 @@ const languages = {
     confirmSOS: "Confirm SOS",
     cancel: "Cancel",
 
-    trackingTitle: "Track complaint",
+    trackingTitle: "Complaint History",
     trackingDescription:
-      "Enter your complaint ID to view the current prototype status.",
+      "Real-time records of all submitted complaints, verification status, and resolution progress.",
 
-    idPlaceholder: "Enter complaint ID",
+    idPlaceholder: "Search or enter complaint ID",
     checkStatus: "Check status",
 
     statusReceived: "Complaint received",
@@ -161,7 +168,7 @@ const languages = {
     native: "हिन्दी",
 
     brand: "स्वार्थिका",
-    subtitle: "PS093 • सार्वजनिक सेवा प्रोटोटाइप",
+    subtitle: "सार्वजनिक सेवा प्रोटोटाइप",
 
     description:
       "स्वार्थिका समझाने योग्य स्क्रीनिंग सहायता के माध्यम से शिकायतों को व्यवस्थित करने और सहायता की जरूरत पहचानने में मदद करता है। हर चरण पर नियंत्रण आपके हाथ में रहता है।",
@@ -169,7 +176,7 @@ const languages = {
     startComplaint: "शिकायत शुरू करें",
     chooseLanguage: "भाषा चुनें",
 
-    trackComplaint: "शिकायत ट्रैक करें",
+    trackComplaint: "शिकायत इतिहास",
     support: "सहायता",
     emergencySOS: "आपातकालीन SOS",
 
@@ -253,7 +260,7 @@ const languages = {
       "आपकी शिकायत प्रोटोटाइप सिस्टम में दर्ज कर ली गई है।",
 
     complaintId: "शिकायत ID",
-    trackNow: "शिकायत ट्रैक करें",
+    trackNow: "इतिहास में देखें",
 
     sosTitle: "आपातकालीन SOS",
     sosDescription:
@@ -262,9 +269,9 @@ const languages = {
     confirmSOS: "SOS की पुष्टि करें",
     cancel: "रद्द करें",
 
-    trackingTitle: "शिकायत ट्रैक करें",
+    trackingTitle: "शिकायत इतिहास",
     trackingDescription:
-      "वर्तमान प्रोटोटाइप स्थिति देखने के लिए शिकायत ID दर्ज करें।",
+      "दर्ज की गई शिकायतों, सत्यापन स्थिति और समाधान प्रगति का वास्तविक समय रिकॉर्ड देखें।",
 
     idPlaceholder: "शिकायत ID दर्ज करें",
     checkStatus: "स्थिति देखें",
@@ -284,7 +291,7 @@ const languages = {
     native: "मराठी",
 
     brand: "स्वार्थिका",
-    subtitle: "PS093 • सार्वजनिक सेवा प्रोटोटाइप",
+    subtitle: "सार्वजनिक सेवा प्रोटोटाइप",
 
     description:
       "स्वार्थिका तक्रारी व्यवस्थित करण्यासाठी आणि सहाय्याची गरज ओळखण्यासाठी समजण्यास सोप्या स्क्रीनिंग प्रणालीचा वापर करते. प्रत्येक टप्प्यावर नियंत्रण तुमच्या हातात आहे.",
@@ -292,7 +299,7 @@ const languages = {
     startComplaint: "तक्रार सुरू करा",
     chooseLanguage: "भाषा निवडा",
 
-    trackComplaint: "तक्रार ट्रॅक करा",
+    trackComplaint: "तक्रार इतिहास",
     support: "मदत",
     emergencySOS: "आपत्कालीन SOS",
 
@@ -406,7 +413,7 @@ const languages = {
     name: "Bengali",
     native: "বাংলা",
     brand: "স্বার্থিকা",
-    subtitle: "PS093 • জনসেবা প্রোটোটাইপ",
+    subtitle: "জনসেবা প্রোটোটাইপ",
     description:
       "স্বার্থিকা অভিযোগ গঠন করতে এবং সহায়তার প্রয়োজন শনাক্ত করতে সহায়তা করে। প্রতিটি ধাপে নিয়ন্ত্রণ আপনার হাতে থাকে।",
     startComplaint: "অভিযোগ শুরু করুন",
@@ -481,7 +488,7 @@ const languages = {
     name: "Gujarati",
     native: "ગુજરાતી",
     brand: "સ્વાર્થિકા",
-    subtitle: "PS093 • જાહેર સેવા પ્રોટોટાઇપ",
+    subtitle: "જાહેર સેવા પ્રોટોટાઇપ",
     description: "સ્વાર્થિકા ફરિયાદોને ગોઠવવામાં અને સહાયની જરૂરિયાત ઓળખવામાં મદદ કરે છે.",
     startComplaint: "ફરિયાદ શરૂ કરો",
     chooseLanguage: "ભાષા પસંદ કરો",
@@ -555,7 +562,7 @@ const languages = {
     name: "Tamil",
     native: "தமிழ்",
     brand: "ஸ்வார்த்திகா",
-    subtitle: "PS093 • பொது சேவை முன்மாதிரி",
+    subtitle: "பொது சேவை முன்மாதிரி",
     description: "புகார்களை ஒழுங்குபடுத்தவும் ஆதரவு தேவைகளை கண்டறியவும் ஸ்வார்த்திகா உதவுகிறது.",
     startComplaint: "புகாரைத் தொடங்குங்கள்",
     chooseLanguage: "மொழியைத் தேர்ந்தெடுக்கவும்",
@@ -629,7 +636,7 @@ const languages = {
     name: "Telugu",
     native: "తెలుగు",
     brand: "స్వార్థిక",
-    subtitle: "PS093 • ప్రజా సేవ ప్రోటోటైప్",
+    subtitle: "ప్రజా సేవ ప్రోటోటైప్",
     description: "ఫిర్యాదులను క్రమబద్ధీకరించడంలో మరియు సహాయం అవసరాలను గుర్తించడంలో స్వార్థిక సహాయపడుతుంది.",
     startComplaint: "ఫిర్యాదును ప్రారంభించండి",
     chooseLanguage: "భాషను ఎంచుకోండి",
@@ -703,7 +710,7 @@ const languages = {
     name: "Kannada",
     native: "ಕನ್ನಡ",
     brand: "ಸ್ವಾರ್ಥಿಕಾ",
-    subtitle: "PS093 • ಸಾರ್ವಜನಿಕ ಸೇವಾ ಪ್ರೋಟೋಟೈಪ್",
+    subtitle: "ಸಾರ್ವಜನಿಕ ಸೇವಾ ಪ್ರೋಟೋಟೈಪ್",
     description: "ದೂರುಗಳನ್ನು ವ್ಯವಸ್ಥಿತಗೊಳಿಸಲು ಮತ್ತು ಸಹಾಯದ ಅಗತ್ಯಗಳನ್ನು ಗುರುತಿಸಲು ಸ್ವಾರ್ಥಿಕಾ ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
     startComplaint: "ದೂರು ಪ್ರಾರಂಭಿಸಿ",
     chooseLanguage: "ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ",
@@ -777,7 +784,7 @@ const languages = {
     name: "Malayalam",
     native: "മലയാളം",
     brand: "സ്വാർത്ഥിക",
-    subtitle: "PS093 • പൊതുസേവന പ്രോട്ടോടൈപ്പ്",
+    subtitle: "പൊതുസേവന പ്രോട്ടോടൈപ്പ്",
     description: "പരാതികൾ ക്രമീകരിക്കാനും പിന്തുണ ആവശ്യങ്ങൾ തിരിച്ചറിയാനും സ്വാർത്ഥിക സഹായിക്കുന്നു.",
     startComplaint: "പരാതി ആരംഭിക്കുക",
     chooseLanguage: "ഭാഷ തിരഞ്ഞെടുക്കുക",
@@ -851,7 +858,7 @@ const languages = {
     name: "Punjabi",
     native: "ਪੰਜਾਬੀ",
     brand: "ਸਵਾਰਥਿਕਾ",
-    subtitle: "PS093 • ਜਨਤਕ ਸੇਵਾ ਪ੍ਰੋਟੋਟਾਈਪ",
+    subtitle: "ਜਨਤਕ ਸੇਵਾ ਪ੍ਰੋਟੋਟਾਈਪ",
     description: "ਸਵਾਰਥਿਕਾ ਸ਼ਿਕਾਇਤਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰਨ ਅਤੇ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਪਛਾਣਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।",
     startComplaint: "ਸ਼ਿਕਾਇਤ ਸ਼ੁਰੂ ਕਰੋ",
     chooseLanguage: "ਭਾਸ਼ਾ ਚੁਣੋ",
@@ -923,6 +930,170 @@ const languages = {
 };
 
 /* =========================================================
+   LANGUAGE SELECTOR & MODAL COMPONENTS
+========================================================= */
+
+const languageMetadata = [
+  { code: "en", name: "English", native: "English", region: "Universal / All India", script: "Latin" },
+  { code: "hi", name: "Hindi", native: "हिन्दी", region: "North & Central India", script: "Devanagari" },
+  { code: "mr", name: "Marathi", native: "मराठी", region: "Maharashtra", script: "Devanagari" },
+  { code: "bn", name: "Bengali", native: "বাংলা", region: "West Bengal & Tripura", script: "Bengali" },
+  { code: "ta", name: "Tamil", native: "தமிழ்", region: "Tamil Nadu & Puducherry", script: "Tamil" },
+  { code: "te", name: "Telugu", native: "తెలుగు", region: "Andhra Pradesh & Telangana", script: "Telugu" },
+  { code: "gu", name: "Gujarati", native: "ગુજરાતી", region: "Gujarat", script: "Gujarati" },
+  { code: "kn", name: "Kannada", native: "ಕನ್ನಡ", region: "Karnataka", script: "Kannada" },
+  { code: "ml", name: "Malayalam", native: "മലയാളം", region: "Kerala & Lakshadweep", script: "Malayalam" },
+  { code: "pa", name: "Punjabi", native: "ਪੰਜਾਬੀ", region: "Punjab & North India", script: "Gurmukhi" },
+];
+
+function LanguageBar({ currentLanguage, onChangeLanguage, onOpenModal, t }) {
+  const topQuickLangs = ["en", "hi", "mr", "bn", "ta", "te", "gu"];
+
+  return (
+    <div className="language-bar-container">
+      <div className="language-bar">
+        {/* Left Side: Live Discoverability Indicator */}
+        <button
+          className="lang-discover-badge"
+          onClick={onOpenModal}
+          title="Click to view all 10 languages / सभी 10 भाषाएं देखें"
+        >
+          <span className="lang-pulse-dot"></span>
+          <Languages size={16} className="lang-icon" />
+          <span className="lang-text-summary">
+            <strong>10+ Indian Languages</strong> • १०+ भारतीय भाषाएं
+          </span>
+          <span className="active-tag">{languages[currentLanguage]?.native || "English"}</span>
+        </button>
+
+        {/* Center: 1-Click Quick Language Chips */}
+        <div className="quick-language-pills" role="tablist">
+          {topQuickLangs.map((code) => {
+            const lang = languages[code];
+            const isSelected = currentLanguage === code;
+            return (
+              <button
+                key={code}
+                className={`quick-lang-pill ${isSelected ? "active" : ""}`}
+                onClick={() => onChangeLanguage(code)}
+                title={`Switch language to ${lang?.name} (${lang?.native})`}
+              >
+                <span>{lang?.native}</span>
+                {isSelected && <span className="pill-active-dot">✓</span>}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Right Side: Open Full Language Modal */}
+        <button
+          className="all-languages-btn"
+          onClick={onOpenModal}
+          title="View all 10 languages"
+        >
+          <Globe2 size={16} />
+          <span>{t.chooseLanguage || "Choose language"}</span>
+          <span className="lang-pill-count">10+</span>
+          <ChevronRight size={14} />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function LanguageModal({ isOpen, onClose, currentLanguage, onSelectLanguage }) {
+  const [search, setSearch] = useState("");
+
+  if (!isOpen) return null;
+
+  const filtered = languageMetadata.filter(
+    (item) =>
+      item.name.toLowerCase().includes(search.toLowerCase()) ||
+      item.native.toLowerCase().includes(search.toLowerCase()) ||
+      item.region.toLowerCase().includes(search.toLowerCase()) ||
+      item.code.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div
+        className="language-modal-card"
+        onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+      >
+        <div className="modal-header">
+          <div className="modal-title-wrap">
+            <div className="modal-icon-badge">
+              <Languages size={22} />
+            </div>
+            <div>
+              <h3>Choose Language / अपनी भाषा चुनें</h3>
+              <p>Instant translation across all complaint, screening and support features</p>
+            </div>
+          </div>
+          <button className="close-button" onClick={onClose} aria-label="Close">
+            <X size={18} />
+          </button>
+        </div>
+
+        <div className="modal-search-bar">
+          <Search size={16} />
+          <input
+            type="text"
+            placeholder="Search language / भाषा खोजें (e.g. Hindi, Tamil, मराठी, te)..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            autoFocus
+          />
+          {search && (
+            <button className="clear-btn" onClick={() => setSearch("")}>
+              <X size={14} />
+            </button>
+          )}
+        </div>
+
+        <div className="languages-grid">
+          {filtered.map((item) => {
+            const isSelected = currentLanguage === item.code;
+            return (
+              <button
+                key={item.code}
+                className={`language-grid-card ${isSelected ? "selected" : ""}`}
+                onClick={() => {
+                  onSelectLanguage(item.code);
+                  onClose();
+                }}
+              >
+                <div className="card-top">
+                  <span className="card-native">{item.native}</span>
+                  {isSelected ? (
+                    <span className="active-badge">
+                      <Check size={13} /> Active
+                    </span>
+                  ) : (
+                    <span className="code-badge">{item.code.toUpperCase()}</span>
+                  )}
+                </div>
+                <div className="card-bottom">
+                  <span className="card-name">{item.name}</span>
+                  <span className="card-region">{item.region}</span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="modal-footer-tip">
+          <Sparkles size={15} />
+          <span>Select any language to switch instantly without losing your current progress.</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================
    APP
 ========================================================= */
 
@@ -931,13 +1102,76 @@ function App() {
   const [page, setPage] = useState("home");
   const [complaint, setComplaint] = useState("");
   const [showSOS, setShowSOS] = useState(false);
-  const [complaintId] = useState("SWA-14566-2026");
-  const [trackingId, setTrackingId] = useState("");
+  const [showLangModal, setShowLangModal] = useState(false);
+  const [complaintId, setComplaintId] = useState("SWA-14566-2026");
+  const [complaintsHistory, setComplaintsHistory] = useState([
+    {
+      id: "SWA-14566-2026",
+      date: "30 Aug 2026, 02:15 PM",
+      description: "Workplace distress & verbal intimidation report requesting psychological counseling support.",
+      status: "Under Review",
+      priority: "High",
+      stage: 3,
+    },
+    {
+      id: "SWA-13982-2026",
+      date: "27 Aug 2026, 11:40 AM",
+      description: "Severe emotional anxiety and panic distress following public transit incident.",
+      status: "Screening Done",
+      priority: "Medium",
+      stage: 2,
+    },
+    {
+      id: "SWA-12401-2026",
+      date: "21 Aug 2026, 04:20 PM",
+      description: "Legal guidance requested regarding cyberstalking and unwanted personal communications.",
+      status: "Authority Action",
+      priority: "High",
+      stage: 4,
+    },
+    {
+      id: "SWA-11029-2026",
+      date: "14 Aug 2026, 09:10 AM",
+      description: "Urgent tele-support counseling session conducted and emotional coping resources provided.",
+      status: "Resolved",
+      priority: "Low",
+      stage: 4,
+    },
+  ]);
 
-  const t = languages[language];
+  const t = languages[language] || languages.en;
 
   const changeLanguage = (value) => {
     setLanguage(value);
+  };
+
+  const handleSubmitComplaint = () => {
+    const randomNum = Math.floor(10000 + Math.random() * 90000);
+    const newId = `SWA-${randomNum}-2026`;
+    const now = new Date();
+    const formattedDate =
+      now.toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      }) +
+      `, ` +
+      now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+
+    const newRecord = {
+      id: newId,
+      date: formattedDate,
+      description:
+        complaint.trim() ||
+        "Emotional distress and support request submitted via web prototype.",
+      status: "Under Review",
+      priority: "High",
+      stage: 2,
+    };
+
+    setComplaintId(newId);
+    setComplaintsHistory((prev) => [newRecord, ...prev]);
+    setPage("submitted");
   };
 
   return (
@@ -950,7 +1184,7 @@ function App() {
         <div className="brand-area" onClick={() => setPage("home")}>
 
           <img
-            src="/swarthika-logo.png"
+            src="/swarthika.png"
             alt="Swarthika"
             className="logo"
           />
@@ -965,7 +1199,7 @@ function App() {
         <nav className="desktop-nav">
 
           <button onClick={() => setPage("tracking")}>
-            <ClipboardList size={17} />
+            <History size={17} />
             {t.trackComplaint}
           </button>
 
@@ -986,27 +1220,14 @@ function App() {
 
       </header>
 
-      {/* ================= LANGUAGE BAR ================= */}
+      {/* ================= INTERACTIVE LANGUAGE BAR ================= */}
 
-      <div className="language-bar">
-
-        <div className="language-title">
-          <Languages size={18} />
-          <span>{t.chooseLanguage}</span>
-        </div>
-
-        <select
-          value={language}
-          onChange={(e) => changeLanguage(e.target.value)}
-        >
-          {Object.entries(languages).map(([key, lang]) => (
-            <option key={key} value={key}>
-              {lang.native}
-            </option>
-          ))}
-        </select>
-
-      </div>
+      <LanguageBar
+        currentLanguage={language}
+        onChangeLanguage={changeLanguage}
+        onOpenModal={() => setShowLangModal(true)}
+        t={t}
+      />
 
       {/* ================= MAIN ================= */}
 
@@ -1038,6 +1259,7 @@ function App() {
             t={t}
             complaintId={complaintId}
             setPage={setPage}
+            onSubmitComplaint={handleSubmitComplaint}
           />
         )}
 
@@ -1050,15 +1272,19 @@ function App() {
         )}
 
         {page === "tracking" && (
-          <TrackingPage
+          <ComplaintHistoryPage
             t={t}
-            trackingId={trackingId}
-            setTrackingId={setTrackingId}
+            complaintsHistory={complaintsHistory}
             setPage={setPage}
+            setComplaint={setComplaint}
           />
         )}
 
       </main>
+
+      {/* ================= FAQ SECTION ================= */}
+
+      <FAQSection />
 
       {/* ================= FOOTER ================= */}
 
@@ -1132,6 +1358,15 @@ function App() {
         </div>
       )}
 
+      {/* ================= LANGUAGE MODAL ================= */}
+
+      <LanguageModal
+        isOpen={showLangModal}
+        onClose={() => setShowLangModal(false)}
+        currentLanguage={language}
+        onSelectLanguage={changeLanguage}
+      />
+
     </div>
   );
 }
@@ -1165,16 +1400,6 @@ function HomePage({ t, setPage, setShowSOS }) {
               <ArrowRight size={19} />
             </button>
 
-            <button
-              className="language-button"
-              onClick={() => {
-                document.querySelector(".language-bar select")?.focus();
-              }}
-            >
-              <Languages size={18} />
-              {t.chooseLanguage}
-            </button>
-
           </div>
 
           <div className="stats">
@@ -1205,36 +1430,74 @@ function HomePage({ t, setPage, setShowSOS }) {
 
         <div className="hero-card">
 
+          {/* 1. Chatbot Option (Light Blue Effect) */}
           <div
-            className="service-card"
+            className="service-card chat-card"
             onClick={() => setPage("complaint")}
           >
-            <div className="service-icon chat">
+            <div className="service-icon chat-icon">
               <MessageSquare size={24} />
             </div>
 
-            <div>
-              <h3>{t.chatText}</h3>
+            <div className="card-info">
+              <div className="card-title-row">
+                <h3>{t.chatText}</h3>
+                <span className="chat-badge">AI Assistant</span>
+              </div>
               <p>{t.chatDescription}</p>
             </div>
 
-            <ChevronRight />
+            <div className="chat-action-pill">
+              <MessageSquare size={13} />
+              <span>Chat</span>
+            </div>
           </div>
 
+          {/* 2. Direct Call on 14566 Helpline (Light Green Effect) */}
+          <a
+            href="tel:14566"
+            className="service-card helpline-call-card"
+            title="Call National Helpline 14566 / 14566 पर कॉल करें"
+          >
+            <div className="service-icon call-icon">
+              <Phone size={24} />
+            </div>
+
+            <div className="card-info">
+              <div className="card-title-row">
+                <h3>{t.helpline || "Helpline"} — 14566</h3>
+                <span className="tollfree-tag">24/7 Toll-Free</span>
+              </div>
+              <p>{t.helplineDescription || "Speak directly with trained support personnel"}</p>
+            </div>
+
+            <div className="call-action-pill">
+              <Phone size={13} />
+              <span>Call 14566</span>
+            </div>
+          </a>
+
+          {/* 3. SOS Option (Light Red Effect) */}
           <div
-            className="service-card emergency"
+            className="service-card emergency-card"
             onClick={() => setShowSOS(true)}
           >
             <div className="service-icon emergency-icon">
               <AlertTriangle size={24} />
             </div>
 
-            <div>
-              <h3>{t.emergencySOS}</h3>
+            <div className="card-info">
+              <div className="card-title-row">
+                <h3>{t.emergencySOS}</h3>
+                <span className="sos-badge">Instant Priority</span>
+              </div>
               <p>{t.emergencyDescription}</p>
             </div>
 
-            <ChevronRight />
+            <div className="sos-action-pill">
+              <AlertTriangle size={13} />
+              <span>SOS</span>
+            </div>
           </div>
 
           <div className="privacy-box">
@@ -1680,6 +1943,105 @@ function TimelineItem({
       </div>
 
     </div>
+  );
+}
+
+/* =========================================================
+   FAQ SECTION
+========================================================= */
+
+const FAQ_ITEMS = [
+  {
+    id: "q1",
+    question: "What is the SWARTHIKA portal?",
+    answer:
+      "SWARTHIKA (Supporting Women And Reporting Through Holistic Integrated Knowledge Access) is an AI-assisted, human-controlled prototype designed to help survivors of atrocities — especially SC/ST community members — safely file complaints, receive priority screening, and access emotional and legal support. All decisions remain with trained human authorities; the AI only suggests, never decides.",
+  },
+  {
+    id: "q2",
+    question: "Why is this portal helpful?",
+    answer:
+      "Traditional complaint processes can be slow, intimidating, and inaccessible to marginalized communities. SWARTHIKA provides a 24/7, multilingual, privacy-first platform where survivors can describe their situation in their own words. An explainable AI triage score helps authorities prioritize urgent cases faster, while ensuring no action is taken without human review. It also connects users instantly to counselling, legal aid, and the national helpline 14566.",
+  },
+  {
+    id: "q3",
+    question: "What are atrocities against SC/ST communities?",
+    answer:
+      "Atrocities under the SC/ST Act refer to acts of violence, humiliation, social boycott, economic exploitation, and intimidation specifically targeting Scheduled Castes (Dalits) and Scheduled Tribes. These include: forced untouchability practices, preventing access to public places, verbal abuse using caste slurs, sexual violence, destruction of property, and denial of livelihood. These acts are distinct from general crimes because they are motivated by the victim's caste or tribal identity, causing deep psychological and social harm beyond physical injury.",
+  },
+  {
+    id: "q4",
+    question: "What are the key laws protecting SC/ST communities?",
+    answer: null,
+    listItems: [
+      { title: "SC/ST (Prevention of Atrocities) Act, 1989", desc: "The primary law that lists and criminalizes specific offences against SC/ST persons. It provides for stringent punishment, special courts, and rights for victims including relief and rehabilitation." },
+      { title: "SC/ST (Prevention of Atrocities) Amendment Act, 2015", desc: "Expanded the list of offences, introduced provisions for anticipatory bail restrictions, and strengthened the rights of victims to be heard at every stage of the case." },
+      { title: "Protection of Civil Rights Act, 1955", desc: "Penalizes the practice of untouchability in any form and enforces civil rights guaranteed under Article 17 of the Constitution of India." },
+      { title: "Indian Penal Code / BNS 2023", desc: "Covers additional offences like assault, criminal intimidation, wrongful confinement, and grievous hurt applicable in atrocity cases." },
+      { title: "Article 17 — Constitution of India", desc: "Abolishes untouchability and forbids its practice in any form. Enforcement of any disability arising out of untouchability is an offence punishable by law." },
+    ],
+  },
+];
+
+function FAQSection() {
+  const [openId, setOpenId] = useState(null);
+
+  return (
+    <section className="faq-section">
+      <div className="faq-inner">
+
+        <div className="faq-header">
+          <div className="faq-header-icon">
+            <Scale size={22} />
+          </div>
+          <div>
+            <h2 className="faq-title">Frequently Asked Questions</h2>
+            <p className="faq-subtitle">
+              Understanding SWARTHIKA, SC/ST atrocities &amp; your rights
+            </p>
+          </div>
+        </div>
+
+        <div className="faq-list">
+          {FAQ_ITEMS.map((item) => {
+            const isOpen = openId === item.id;
+            return (
+              <div key={item.id} className={`faq-item ${isOpen ? "open" : ""}`}>
+                <button
+                  className="faq-question"
+                  onClick={() => setOpenId(isOpen ? null : item.id)}
+                  aria-expanded={isOpen}
+                >
+                  <span>{item.question}</span>
+                  <ChevronRight size={18} className={`faq-chevron ${isOpen ? "rotated" : ""}`} />
+                </button>
+                {isOpen && (
+                  <div className="faq-answer">
+                    {item.answer && <p>{item.answer}</p>}
+                    {item.listItems && (
+                      <ul className="faq-law-list">
+                        {item.listItems.map((law, i) => (
+                          <li key={i}>
+                            <span className="law-title">{law.title}</span>
+                            <span className="law-desc">{law.desc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="faq-disclaimer">
+          <ShieldCheck size={13} />
+          This information is for awareness only and does not constitute legal advice. For legal assistance, contact NALSA (National Legal Services Authority) or a qualified advocate.
+        </p>
+
+      </div>
+    </section>
   );
 }
 
