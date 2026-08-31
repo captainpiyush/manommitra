@@ -45,7 +45,7 @@ const languages = {
     native: "English",
 
     brand: "SWARTHIKA",
-    subtitle: "PUBLIC SERVICE PROTOTYPE",
+    subtitle: "PUBLIC SERVICE PORTAL",
 
     description:
       "SWARTHIKA helps structure complaints and identify support needs using an explainable screening aid. You stay in control at every step.",
@@ -72,7 +72,7 @@ const languages = {
     scaleLabel: "SVA scale",
 
     available: "24/7",
-    availableLabel: "Prototype flow",
+    availableLabel: "Work flow",
 
     human: "Human",
     humanLabel: "Final decision",
@@ -168,7 +168,7 @@ const languages = {
     native: "हिन्दी",
 
     brand: "स्वार्थिका",
-    subtitle: "सार्वजनिक सेवा प्रोटोटाइप",
+    subtitle: "सार्वजनिक सेवा पोर्टल",
 
     description:
       "स्वार्थिका समझाने योग्य स्क्रीनिंग सहायता के माध्यम से शिकायतों को व्यवस्थित करने और सहायता की जरूरत पहचानने में मदद करता है। हर चरण पर नियंत्रण आपके हाथ में रहता है।",
@@ -195,7 +195,7 @@ const languages = {
     scaleLabel: "SVA स्केल",
 
     available: "24/7",
-    availableLabel: "प्रोटोटाइप प्रक्रिया",
+    availableLabel: "काम का प्रवाह",
 
     human: "मानव",
     humanLabel: "अंतिम निर्णय",
@@ -291,7 +291,7 @@ const languages = {
     native: "मराठी",
 
     brand: "स्वार्थिका",
-    subtitle: "सार्वजनिक सेवा प्रोटोटाइप",
+    subtitle: "सार्वजनिक सेवा पोर्टल",
 
     description:
       "स्वार्थिका तक्रारी व्यवस्थित करण्यासाठी आणि सहाय्याची गरज ओळखण्यासाठी समजण्यास सोप्या स्क्रीनिंग प्रणालीचा वापर करते. प्रत्येक टप्प्यावर नियंत्रण तुमच्या हातात आहे.",
@@ -318,7 +318,7 @@ const languages = {
     scaleLabel: "SVA स्केल",
 
     available: "24/7",
-    availableLabel: "प्रोटोटाइप प्रक्रिया",
+    availableLabel: "कार्यप्रवाह",
 
     human: "मानवी",
     humanLabel: "अंतिम निर्णय",
@@ -413,7 +413,7 @@ const languages = {
     name: "Bengali",
     native: "বাংলা",
     brand: "স্বার্থিকা",
-    subtitle: "জনসেবা প্রোটোটাইপ",
+    subtitle: "জনসেবা পোর্টাল",
     description:
       "স্বার্থিকা অভিযোগ গঠন করতে এবং সহায়তার প্রয়োজন শনাক্ত করতে সহায়তা করে। প্রতিটি ধাপে নিয়ন্ত্রণ আপনার হাতে থাকে।",
     startComplaint: "অভিযোগ শুরু করুন",
@@ -430,7 +430,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA স্কেল",
     available: "24/7",
-    availableLabel: "প্রোটোটাইপ প্রবাহ",
+    availableLabel: "কর্মপ্রবাহ",
     human: "মানব",
     humanLabel: "চূড়ান্ত সিদ্ধান্ত",
     victimFirst: "ভুক্তভোগী-প্রথম",
@@ -488,7 +488,7 @@ const languages = {
     name: "Gujarati",
     native: "ગુજરાતી",
     brand: "સ્વાર્થિકા",
-    subtitle: "જાહેર સેવા પ્રોટોટાઇપ",
+    subtitle: "જાહેર સેવા પોર્ટલ",
     description: "સ્વાર્થિકા ફરિયાદોને ગોઠવવામાં અને સહાયની જરૂરિયાત ઓળખવામાં મદદ કરે છે.",
     startComplaint: "ફરિયાદ શરૂ કરો",
     chooseLanguage: "ભાષા પસંદ કરો",
@@ -504,7 +504,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA સ્કેલ",
     available: "24/7",
-    availableLabel: "પ્રોટોટાઇપ પ્રવાહ",
+    availableLabel: "કાર્યપ્રવાહ",
     human: "માનવ",
     humanLabel: "અંતિમ નિર્ણય",
     victimFirst: "પીડિત-પ્રથમ",
@@ -562,7 +562,7 @@ const languages = {
     name: "Tamil",
     native: "தமிழ்",
     brand: "ஸ்வார்த்திகா",
-    subtitle: "பொது சேவை முன்மாதிரி",
+    subtitle: "பொதுச் சேவை இணையதளம்",
     description: "புகார்களை ஒழுங்குபடுத்தவும் ஆதரவு தேவைகளை கண்டறியவும் ஸ்வார்த்திகா உதவுகிறது.",
     startComplaint: "புகாரைத் தொடங்குங்கள்",
     chooseLanguage: "மொழியைத் தேர்ந்தெடுக்கவும்",
@@ -578,7 +578,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA அளவு",
     available: "24/7",
-    availableLabel: "முன்மாதிரி ஓட்டம்",
+    availableLabel: "பணி ஓட்டம்",
     human: "மனித",
     humanLabel: "இறுதி முடிவு",
     victimFirst: "பாதிக்கப்பட்டவர் முதலில்",
@@ -636,7 +636,7 @@ const languages = {
     name: "Telugu",
     native: "తెలుగు",
     brand: "స్వార్థిక",
-    subtitle: "ప్రజా సేవ ప్రోటోటైప్",
+    subtitle: "ప్రజా సేవా పోర్టల్",
     description: "ఫిర్యాదులను క్రమబద్ధీకరించడంలో మరియు సహాయం అవసరాలను గుర్తించడంలో స్వార్థిక సహాయపడుతుంది.",
     startComplaint: "ఫిర్యాదును ప్రారంభించండి",
     chooseLanguage: "భాషను ఎంచుకోండి",
@@ -652,7 +652,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA స్కేల్",
     available: "24/7",
-    availableLabel: "ప్రోటోటైప్ ఫ్లో",
+    availableLabel: "పని విధానం",
     human: "మానవ",
     humanLabel: "తుది నిర్ణయం",
     victimFirst: "బాధితుడు మొదట",
@@ -710,7 +710,7 @@ const languages = {
     name: "Kannada",
     native: "ಕನ್ನಡ",
     brand: "ಸ್ವಾರ್ಥಿಕಾ",
-    subtitle: "ಸಾರ್ವಜನಿಕ ಸೇವಾ ಪ್ರೋಟೋಟೈಪ್",
+    subtitle: "ಸಾರ್ವಜನಿಕ ಸೇವಾ ಪೋರ್ಟಲ್",
     description: "ದೂರುಗಳನ್ನು ವ್ಯವಸ್ಥಿತಗೊಳಿಸಲು ಮತ್ತು ಸಹಾಯದ ಅಗತ್ಯಗಳನ್ನು ಗುರುತಿಸಲು ಸ್ವಾರ್ಥಿಕಾ ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
     startComplaint: "ದೂರು ಪ್ರಾರಂಭಿಸಿ",
     chooseLanguage: "ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ",
@@ -726,7 +726,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA ಸ್ಕೇಲ್",
     available: "24/7",
-    availableLabel: "ಪ್ರೋಟೋಟೈಪ್ ಫ್ಲೋ",
+    availableLabel: "ಕೆಲಸದ ಹರಿವು",
     human: "ಮಾನವ",
     humanLabel: "ಅಂತಿಮ ನಿರ್ಧಾರ",
     victimFirst: "ಬಾಧಿತರಿಗೆ ಮೊದಲ ಆದ್ಯತೆ",
@@ -784,7 +784,7 @@ const languages = {
     name: "Malayalam",
     native: "മലയാളം",
     brand: "സ്വാർത്ഥിക",
-    subtitle: "പൊതുസേവന പ്രോട്ടോടൈപ്പ്",
+    subtitle: "പൊതു സേവന പോർട്ടൽ",
     description: "പരാതികൾ ക്രമീകരിക്കാനും പിന്തുണ ആവശ്യങ്ങൾ തിരിച്ചറിയാനും സ്വാർത്ഥിക സഹായിക്കുന്നു.",
     startComplaint: "പരാതി ആരംഭിക്കുക",
     chooseLanguage: "ഭാഷ തിരഞ്ഞെടുക്കുക",
@@ -800,7 +800,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA സ്കെയിൽ",
     available: "24/7",
-    availableLabel: "പ്രോട്ടോടൈപ്പ് ഫ്ലോ",
+    availableLabel: "ജോലി പ്രവാഹം",
     human: "മനുഷ്യ",
     humanLabel: "അന്തിമ തീരുമാനം",
     victimFirst: "ഇരയ്ക്ക് മുൻഗണന",
@@ -858,7 +858,7 @@ const languages = {
     name: "Punjabi",
     native: "ਪੰਜਾਬੀ",
     brand: "ਸਵਾਰਥਿਕਾ",
-    subtitle: "ਜਨਤਕ ਸੇਵਾ ਪ੍ਰੋਟੋਟਾਈਪ",
+    subtitle: "ਜਨਤਕ ਸੇਵਾ ਪੋਰਟਲ",
     description: "ਸਵਾਰਥਿਕਾ ਸ਼ਿਕਾਇਤਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰਨ ਅਤੇ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਪਛਾਣਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।",
     startComplaint: "ਸ਼ਿਕਾਇਤ ਸ਼ੁਰੂ ਕਰੋ",
     chooseLanguage: "ਭਾਸ਼ਾ ਚੁਣੋ",
@@ -874,7 +874,7 @@ const languages = {
     scale: "0–100",
     scaleLabel: "SVA ਸਕੇਲ",
     available: "24/7",
-    availableLabel: "ਪ੍ਰੋਟੋਟਾਈਪ ਫਲੋ",
+    availableLabel: "ਕੰਮ ਦਾ ਪ੍ਰਵਾਹ",
     human: "ਮਨੁੱਖ",
     humanLabel: "ਅੰਤਿਮ ਫੈਸਲਾ",
     victimFirst: "ਪੀੜਤ ਪਹਿਲਾਂ",
